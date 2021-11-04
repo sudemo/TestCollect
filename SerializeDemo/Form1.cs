@@ -71,7 +71,7 @@ namespace SerializeDemo
             //IFormatter formatter = new BinaryFormatter();
             //反序列化后强制转换
             MyObject dobj = (MyObject)formatter.Deserialize(stream);
-            dobj.DmT();
+            //dobj.DmT();
             stream.Close();
         }
     }
@@ -85,12 +85,12 @@ namespace SerializeDemo
         public int n2 = 0;
         public String str = null;
     
-        RefDemo RefDemo = new RefDemo();
+        //RefDemo RefDemo = new RefDemo();
 
-        public void DmT()
-        {
-            RefDemo.ChangeValue(123);
-        }
+        //public void DmT()
+        //{
+        //    RefDemo.ChangeValue(11123);
+        //}
     }
     [Serializable]
     public class RefDemo
