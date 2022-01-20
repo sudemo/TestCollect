@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sunny.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,7 @@ using System.Windows.Forms;
 
 namespace TestDemoCollect
 {
+   //如果不想完全使用sunny ui 的主界面，只想用它的通知等功能，可以单独加个form继承uiform，在这个form的实例调用uiform的功能
     public partial class DEventForm1 : Form
     {
        
@@ -39,7 +41,7 @@ namespace TestDemoCollect
             // 浏览器的开启后，控制台的界面依然保持
             // 在运行程序之前，谷歌浏览器已经开启。
             // 程序的运行效果是：追加标签页，而不是新开一个程序。
-            string url = @"D:\CODING\GitRespository\pythonweb\cuiqingcai.com\templates\message.html";
+            string url = @"D:/CODING/GitRespository/web/myhub_project/templates/base.html";
             //string path = @"C:\Program Files\Google\Chrome\Application\chrome.exe";
             //Process.Start(path,
             //    url);
@@ -49,26 +51,26 @@ namespace TestDemoCollect
 
         private void button3_Click(object sender, EventArgs e)
         {
-#if DEBUG
-            MessageBox.Show("Test");
-#endif
+            //MessageBox.Show("Test");
+
             Label lb = new Label();
-            lb.Text = "hello";
-            lb.Visible = true;
-            lb.Size = new System.Drawing.Size(47, 15);
-            lb.Location = new System.Drawing.Point(428, 92);
-            lb.Parent = this;
-            this.Controls.Add(lb);
-            lb.Show();
+            //lb.Text = "hello";
+            //lb.Visible = true;
+            ////lb.Size = new System.Drawing.Size(47, 15);
+            ////lb.Location = new System.Drawing.Point(428, 92);
+            //lb.Parent = this;
+            //this.Controls.Add(lb);
+            //lb.Show();
             //AnimateWindow(MessageBox.Handle, 1000, AW_BLEND | AW_HIDE);
-            NewBtn();
+            //NewBtn();
             AutoHideForms autoHideForms = new AutoHideForms();
-            autoHideForms.Show();
+            autoHideForms.Show("你好，我是超时消息框，3秒后自动关闭！超长文字我是超时消息框， 3秒后自动关闭！超长文字,3秒后自动关闭！超长文字3秒后自动关闭！超长文字", "提示", 14000);
             //Thread.Sleep(10000);
             //autoHideForms.FMClosed();
             //autoHideForms.Close();
-            MessageBoxTimeOut.Show("你好，我是超时消息框，3秒后自动关闭！", "提示", 1000);
-
+            //MessageBoxTimeOut.Show("你好，我是超时消息框，3秒后自动关闭！超长文字我是超时消息框，3秒后自动关闭！超长文字", "提示", 3000);
+            //autoHideForms.SowNotifier();
+            autoHideForms.ShowErrorNotifier("你好，我是超时消息框，3秒后自动关闭！超长文字我是超时消息框",true);
         }
 
         private void NewBtn()

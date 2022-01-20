@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31613.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIYevent", "TestDemoCollect\DIYevent.csproj", "{C870283F-9AAA-48EE-A2C0-4479BB557750}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "可自动隐藏通知窗口", "TestDemoCollect\可自动隐藏通知窗口.csproj", "{C870283F-9AAA-48EE-A2C0-4479BB557750}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORMDemo", "ORMDemo\ORMDemo.csproj", "{28728DD9-01F3-470A-8FA8-B8B6D3D8C256}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializeDemo", "SerializeDemo\SerializeDemo.csproj", "{07B51AD2-1CEF-42CB-89A8-640E23DBB2C0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "六轴正逆运动", "WindowsFormsApp1\六轴正逆运动.csproj", "{44A854DE-EBA1-467B-8C84-A1258C408FAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlHelper", "XmlHelper\XmlHelper.csproj", "{BFCCD649-2714-41C4-9BB6-E4F73F43D724}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{44A854DE-EBA1-467B-8C84-A1258C408FAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44A854DE-EBA1-467B-8C84-A1258C408FAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44A854DE-EBA1-467B-8C84-A1258C408FAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFCCD649-2714-41C4-9BB6-E4F73F43D724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFCCD649-2714-41C4-9BB6-E4F73F43D724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFCCD649-2714-41C4-9BB6-E4F73F43D724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFCCD649-2714-41C4-9BB6-E4F73F43D724}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
